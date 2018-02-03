@@ -121,6 +121,7 @@ def replay():
     print("Do you want to play again?(Y/n)")
     answer = input().lower()
     if answer == "y":
+        clear()
         initialize_game()
     elif answer == "n":
         exit()
