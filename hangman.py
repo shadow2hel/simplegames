@@ -22,7 +22,8 @@ class Game:
 galgje = Game()
 
 def initialize_game():
-
+    clear()
+    
     galgje.LIVES = 7
     galgje.out_of_lives = False
     galgje.gameWord = getpass.getpass('Give a word or sentence we should use:').lower()
@@ -121,6 +122,7 @@ def replay():
     print("Do you want to play again?(Y/n)")
     answer = input().lower()
     if answer == "y":
+        clear()
         initialize_game()
     elif answer == "n":
         exit()
