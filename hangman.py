@@ -104,7 +104,8 @@ def play():
                 print("You found the word(s)!")
                 replay()
                 break
-            else:
+            elif galgje.found_a_letter:
+                galgje.found_a_letter = False
                 clear()
                 print("Right!")
                 galgje.found_letters.append(galgje.found_letter)
