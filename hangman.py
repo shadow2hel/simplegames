@@ -51,7 +51,7 @@ def play():
         draw_hangman()
 
         print("Guess a letter:")
-        guess = input()
+        guess = input().lower()
 
         if len(guess) > 1:
             if guess == galgje.gameWord:
